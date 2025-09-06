@@ -37,6 +37,9 @@ if not st.session_state.game_over:
 # Show message
 if st.session_state.message:
     st.info(st.session_state.message)
+# show balloons if the player is wins
+if st.session_state.won:
+    st.balloons()
 
 # Restart game button
 if st.session_state.game_over:

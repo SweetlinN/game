@@ -11,6 +11,7 @@ if "number" not in st.session_state:
     st.session_state.max_attempts = 7
     st.session_state.game_over = False
     st.session_state.message = ""
+    st.session_state.won = False
 
 # Display attempts
 st.write(f"Attempts remaining: {st.session_state.max_attempts - st.session_state.attempts}")
